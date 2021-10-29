@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rock+Salt&display=swap");
+
+:root {
+  --scroll: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100vh;
+}
+
+.r {
+  min-height: 10000px;
+}
+
+.safe {
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  z-index: 2;
+}
+
+.safe h1 {
+  font-family: "Rock Salt";
+  color: white;
+}
+
+.safe p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  font-family: "Rock Salt";
+  max-width: 250px;
+  text-align: justify;
+  color: white;
+}
+
+div.winner {
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-family: "Rock Salt";
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+div.box {
+  width: 250px;
+  height: 250px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(calc(var(--scroll) * 0.08deg));
+  transform-origin: center;
+}
+
+div.innerdial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  z-index: 2;
+  background-color: silver;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+div.box-flash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  transform: scale(1);
+  background-color: silver;
+  border-radius: 50%;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.click {
+  animation: click 0.2s 1;
+}
+
+.near {
+  animation: near 0.2s 1;
+}
+
+.off {
+  animation: off 0.2s 1;
+}
+
+@keyframes click {
+  0% {
+    background-color: lime;
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    background-color: lime;
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes near {
+  0% {
+    background-color: green;
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    background-color: green;
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes off {
+  0% {
+    transform: scale(1);
+    opacity: 0.25;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+div.mark {
+  position: absolute;
+  top: 122px;
+  left: 115px;
+  width: 20px;
+  height: 6px;
+  background-color: grey;
+  border: 1px solid black;
+}
+
+div.mark:nth-of-type(1) {
+  transform: rotate(calc(22.5deg * 0)) translateX(100px);
+}
+div.mark:nth-of-type(2) {
+  transform: rotate(calc(22.4deg * 1)) translateX(100px);
+}
+div.mark:nth-of-type(3) {
+  transform: rotate(calc(22.5deg * 2)) translateX(100px);
+}
+div.mark:nth-of-type(4) {
+  transform: rotate(calc(22.5deg * 3)) translateX(100px);
+}
+div.mark:nth-of-type(5) {
+  transform: rotate(calc(22.5deg * 4)) translateX(100px);
+}
+div.mark:nth-of-type(6) {
+  transform: rotate(calc(22.5deg * 5)) translateX(100px);
+}
+div.mark:nth-of-type(7) {
+  transform: rotate(calc(22.5deg * 6)) translateX(100px);
+}
+div.mark:nth-of-type(8) {
+  transform: rotate(calc(22.5deg * 7)) translateX(100px);
+}
+div.mark:nth-of-type(9) {
+  transform: rotate(calc(22.5deg * 8)) translateX(100px);
+}
+div.mark:nth-of-type(10) {
+  transform: rotate(calc(22.5deg * 9)) translateX(100px);
+}
+div.mark:nth-of-type(11) {
+  transform: rotate(calc(22.5deg * 10)) translateX(100px);
+}
+div.mark:nth-of-type(12) {
+  transform: rotate(calc(22.5deg * 11)) translateX(100px);
+}
+div.mark:nth-of-type(13) {
+  transform: rotate(calc(22.5deg * 12)) translateX(100px);
+}
+div.mark:nth-of-type(14) {
+  transform: rotate(calc(22.5deg * 13)) translateX(100px);
+}
+div.mark:nth-of-type(15) {
+  transform: rotate(calc(22.5deg * 14)) translateX(100px);
+}
+div.mark:nth-of-type(16) {
+  transform: rotate(calc(22.5deg * 15)) translateX(100px);
+}
+
+div.center {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: grey;
+  border: 1px solid black;
+}
+
+div.start {
+  position: absolute;
+  top: 70px;
+  left: 65px;
+  width: 20px;
+  height: 10px;
+  background-color: white;
+  transform: rotate(-90deg) translateX(60px);
+}
+
+.position {
+  position: relative;
+  margin-top: 5px;
+  text-align: center;
+  padding: 3px;
+  min-width: 24px;
+  border: 1px solid black;
+  background-color: #fff;
+  font-family: monospace;
+  color: #888;
+}
+
+.chalkboard {
+  position: absolute;
+  left: 15vw;
+  top: 50vh;
+  padding: 20px;
+  font-size: 4em;
+  font-family: "Homemade Apple";
+  transform: rotate(15deg);
+  white-space: pre;
+  line-height: 1em;
+  color: #ffffff;
+}
+
+.hint {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  font-family: "Homemade Apple";
+  transform: rotate(-15deg);
+  white-space: pre;
+  line-height: 1em;
+  color: #393939;
+}
+
+.hint:hover {
+  color: #888888;
+}
+
+body.dial main {
+}
+
+body.dial .safe {
+  position: fixed;
+}
+
+body.handle main {
+  overflow: hidden;
+}
+
+body.handle .safe {
+  position: initial;
+}
+
+html { 
+  background: url(https://droldan55.github.io/EscapeRoomNarrative/Pos.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
