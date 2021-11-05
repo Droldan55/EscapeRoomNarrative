@@ -1,0 +1,57 @@
+/*Banner Display*/
+.Main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+/*Background*/
+ html { 
+  background: url(https://droldan55.github.io/EscapeRoomNarrative/Who.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+/*Header Decoration*/
+h1 {
+  border: 5px solid Red;
+  font-family: 'Ephesis', cursive;
+  padding-top: 25px;
+  padding-bottom: 25px;
+   margin-right: 400px;
+  margin-left: 400px;
+  text-align: center;
+  color:Darkblue;
+  background-color:white;
+  font-style: italic;
+}
+
+p {
+  color: White;
+  font-weight: bold;
+}
+
+button {
+  text-align: center;
+}
+
+.round {
+  border-radius: 50%;
+} 
+  .previous {
+  background-color: #FF0000;
+  color: black;
+}
+
+.next {
+  background-color: #0000FF;
+  color: white;
+}
+  
+  a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.But{
+  text-align: center;
+}

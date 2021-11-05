@@ -1,0 +1,114 @@
+p {
+  border: 5px solid Red;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 80px;
+  margin-left: 80px;
+  color:Darkblue;
+  background-color:white;
+  font-style: italic;
+}
+
+.Title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.Start {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.End {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  
+}
+
+.Hob {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+html { 
+  background: url(https://droldan55.github.io/EscapeRoomNarrative/Whw.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+h1 {
+  border: 5px solid Red;
+  font-family: 'Ephesis', cursive;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left:5px;
+  padding-right:5px;
+   margin-right: 300px;
+  margin-left: 300px;
+  text-align: center;
+  color:Darkblue;
+  background-color:white;
+  font-style: italic;
+ 
+}
+
+.button {
+  background-color: black;
+  border: 10px solid grey;
+  color: #FF0000;
+  padding: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  
+  cursor: pointer;
+  
+}
+
+.text-center{
+  text-align: center;
+}
+
+.glow {
+  font-family: 'Fruktur', cursive;
+  font-size: 80px;
+  color: #FF0000;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF7F7F, 0 0 40px #FF7F7F, 0 0 50px #FF7F7F, 0 0 60px #FF7F7F, 0 0 70px #FF7F7F;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #FF0000, 0 0 30px #ff4da6., 0 0 40px #ff4da6., 0 0 50px #ff4da6., 0 0 60px #ff4da6., 0 0 70px #ff4da6., 0 0 80px #ff4da6.;
+  }
+}
+
+
+.get {
+  border: 5px solid Red;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 80px;
+  margin-left: 80px;
+  color:Darkblue;
+  background-color:white;
+  font-style: italic;
+ 
+}
